@@ -95,7 +95,7 @@
         }
 
         function updateMarkerFixed() {
-            fetch(`https://restapi.amap.com/v3/assistant/coordinate/convert?locations=${lng},${lag}&coordsys=gps&output=xml&key=9577414dd827dc990acb8034db3dd08f`, {
+            fetch(`https://restapi.amap.com/v3/assistant/coordinate/convert?locations=${lng},${lag}&coordsys=gps&output=xml&key=高德API_Key`, {
                 "referrerPolicy": "strict-origin-when-cross-origin",
                 "body": null,
                 "method": "GET"
@@ -120,7 +120,7 @@
         //获取固定经纬度
         function getFixedLocationAndCreateMap() {
             Flag = false;
-            fetch(`https://restapi.amap.com/v3/assistant/coordinate/convert?locations=${lng},${lag}&coordsys=gps&output=xml&key=9577414dd827dc990acb8034db3dd08f`, {
+            fetch(`https://restapi.amap.com/v3/assistant/coordinate/convert?locations=${lng},${lag}&coordsys=gps&output=xml&key=高德API_Key`, {
                 "referrerPolicy": "strict-origin-when-cross-origin",
                 "body": null,
                 "method": "GET"
